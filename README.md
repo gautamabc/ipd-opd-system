@@ -10,3 +10,6 @@ Added patient ID generation rules.
  
 ### v2.0 - Bed Management (date: YYYY-MM-DD) 
 Added bed allocation and status tracking. 
+ 
+### v3.0 - Billing Module (date: YYYY-MM-DD) 
+Added billing and discharge summary specs. 
