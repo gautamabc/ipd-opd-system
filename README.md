@@ -7,3 +7,6 @@ v1.0 - Baseline SRS (initial).
 ### v1.1 - Patient Registration (date: YYYY-MM-DD) 
 Added patient registration flow. 
 Added patient ID generation rules. 
+ 
+### v2.0 - Bed Management (date: YYYY-MM-DD) 
+Added bed allocation and status tracking. 
