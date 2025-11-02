@@ -1,0 +1,76 @@
+✅ Start a Fresh SCM Project From Scratch
+1️⃣ Create project folder & init Git
+mkdir srs_project
+cd srs_project
+git init
+
+2️⃣ Add baseline SRS (v1.0)
+
+Create file:
+
+echo "SRS v1.0 - Baseline Software Requirements Specification" > SRS_v1.0.txt
+echo "Initial SRS requirements baseline" > CHANGELOG_v1.0.txt
+
+
+Commit:
+
+git add .
+git commit -m "v1.0 - Baseline SRS"
+
+
+Tag version:
+
+git tag v1.0
+
+3️⃣ Modify SRS → Add new module (v1.1)
+echo "SRS v1.1 - Added patient registration requirements" > SRS_v1.1.txt
+echo "v1.1: Added patient registration requirements" > CHANGELOG_v1.1.txt
+
+
+Commit:
+
+git add .
+git commit -m "v1.1 - Added patient registration"
+
+
+Tag:
+
+git tag v1.1
+
+4️⃣ Next Version: v2.0
+echo "SRS v2.0 - Added bed management module" > SRS_v2.0.txt
+echo "v2.0: Added bed management module" > CHANGELOG_v2.0.txt
+
+git add .
+git commit -m "v2.0 - Added bed management module"
+git tag v2.0
+
+5️⃣ Next Version: v3.0
+echo "SRS v3.0 - Added billing & discharge module" > SRS_v3.0.txt
+echo "v3.0: Added billing & discharge module" > CHANGELOG_v3.0.txt
+
+git add .
+git commit -m "v3.0 - Added billing and discharge module"
+git tag v3.0
+
+6️⃣ Create README
+echo "Software Requirements Specification (SRS) Project
+Version History:
+v1.0 - Baseline
+v1.1 - Patient Registration
+v2.0 - Bed Management
+v3.0 - Billing & Discharge Module" > README.md
+
+
+Commit:
+
+git add README.md
+git commit -m "Added README with version history"
+
+7️⃣ Push to GitHub
+
+Create repo on GitHub → copy your remote URL, then:
+
+git remote add origin <your_repo_url>
+git push -u origin main
+git push origin --tags
